@@ -1,161 +1,122 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KYU - かわいいからはじまる、わたしの物語</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYU - "かわいい"からはじまる、わたしの物語</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
   <style>
-
-.hero-img {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  display: block;
-  margin: 0 auto 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(255, 170, 200, 0.2);
-}
-
     body {
-      background: linear-gradient(to bottom, #ffeef7, #fff);
-      font-family: "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
-      color: #555;
-      text-align: center;
       margin: 0;
       padding: 0;
+      font-family: 'Kiwi Maru', 'Hiragino Maru Gothic ProN', sans-serif;
+      background-color: #fff9fb;
+      color: #5c5c5c;
     }
-
-    header {
-      padding: 80px 20px 60px;
+    .hero {
+      background: url('hero-top.png') no-repeat center top;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 100px;
     }
-
-    h1 {
-      color: #e91e63;
-      font-size: 28px;
-      background: #fff0f6;
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(255, 170, 200, 0.2);
-    }
-
-    p {
-      font-size: 16px;
-      color: #777;
-      margin: 12px 0 24px;
-    }
-
-    .cta-button {
-      background-color: #ff87b7;
-      color: white;
-      border: none;
-      border-radius: 25px;
-      padding: 14px 28px;
-      margin: 10px;
-      font-size: 16px;
-      box-shadow: 0 4px 10px rgba(255, 150, 200, 0.4);
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #ffb6d5;
-    }
-
-    section {
-      padding: 40px 20px;
-    }
-
-    h2 {
-      font-size: 20px;
-      color: #e91e63;
-      margin-bottom: 16px;
-    }
-
-    .steps div,
-    .gallery div,
-    .voice div {
-      background: #fff;
-      margin: 10px auto;
-      max-width: 300px;
-      padding: 12px;
+    .hero h1 {
+      font-size: 32px;
+      color: #a182c4;
+      background-color: rgba(255,255,255,0.8);
+      padding: 12px 24px;
       border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(255, 182, 193, 0.2);
     }
-
-    footer {
-      background: #fff0f5;
-      padding: 40px 20px;
+    .hero p {
+      margin-top: 12px;
+      font-size: 18px;
+      color: #8a8a8a;
     }
-
-    footer p {
+    .cta {
+      background-color: #fdd6e5;
+      padding: 20px 40px;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #db7093;
+      font-size: 24px;
       margin-bottom: 16px;
+    }
+    .step-box, .voice-box, .faq-box {
+      background-color: #fff0f7;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(255, 192, 203, 0.3);
+    }
+    footer {
+      background: #fef3f8;
+      padding: 40px;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-
-<div class="hero-banner">
- <img src="hero-top.png" alt="お洋服を選んだらあなたの物語が始まる" class="hero-img">
-
-  <header>
-    <h1>"かわいい"からはじまる、わたしの物語。</h1>
-    <p>ファッション×誌面体験でモデルデビュー♡</p>
-    <button class="cta-button">今すぐ参加する</button>
-    <button class="cta-button">わたしのページをつくる</button>
-  </header>
-
-  <section class="about-section">
-  <div class="about-box">
-    <h2>KYUってなに？</h2>
-    <p>
-      KYUは、お洋服を選ぶと、自分だけのページが雑誌風に完成する“体験型”アパレルブランド。<br />
-      プロの編集とデザインで、まるで絵本みたいな世界にあなたが主役として登場。
-    </p>
+  <div class="hero">
+    <h1>お洋服を選んだらあなたの物語が始まる</h1>
+    <p>ファッションと絵本みたいな誌面体験がひとつになった、ときめきブランド♡</p>
+    <a href="#" class="cta">今すぐわたしの物語を始める</a>
   </div>
-</section>
-
 
   <section>
-    <h2>どうやって参加するの？</h2>
-    <div class="steps">
-      <div>1. お洋服を選ぶ（ECサイトで購入）</div>
-      <div>2. 自撮りする（届いたら着てスマホで撮影）</div>
-      <div>3. KYU編集部が誌面を作成</div>
-      <div>4. あなたのページが完成♡</div>
+    <h2>KYUってなに？</h2>
+    <div class="step-box">
+      <p>KYUは、お洋服を選ぶと、自分だけのページが雑誌風に完成する“体験型”アパレルブランド。<br>
+        プロの編集とデザインで、まるでLARMEみたいな世界にあなたが主役として登場。</p>
     </div>
   </section>
 
   <section>
-    <h2>誌面サンプル</h2>
-    <div class="gallery">
-      <div>モックアップ画像１</div>
-      <div>モックアップ画像２</div>
+    <h2>参加ステップ</h2>
+    <div class="step-box">
+      <p>1. お洋服を選ぶ（ECサイトで購入）</p>
+      <p>2. 自撮りする（届いたら着てスマホで撮影）</p>
+      <p>3. KYU編集部が誌面を作成</p>
+      <p>4. あなたのページが完成♡</p>
     </div>
   </section>
 
   <section>
     <h2>参加者の声</h2>
-    <div class="voice">
-      <div>「本当に自分がモデルみたいで嬉しい♡」</div>
-      <div>「スマホ写真でも可愛く誌面になった！」</div>
+    <div class="voice-box">
+      <p>「本当に自分がモデルみたいで嬉しい♡」</p>
+      <p>「スマホ写真でも可愛く誌面になった！」</p>
     </div>
   </section>
 
-  <section class="faq">
+  <section>
     <h2>よくある質問</h2>
-    <h3>Q：スマホの写真でも大丈夫？</h3>
-    <p>A：OKです！編集部がかわいく仕上げます♡</p>
-    <h3>Q：顔を隠したいときは？</h3>
-    <p>A：スタンプ加工・トリミング対応可能！</p>
-    <h3>Q：費用は？</h3>
-    <p>A：お洋服購入＋参加は無料でOK！（今だけ♡）</p>
+    <div class="faq-box">
+      <p><strong>Q：</strong>スマホの写真でも大丈夫？<br><strong>A：</strong>OKです！編集部がかわいく仕上げます♡</p>
+      <p><strong>Q：</strong>顔を隠したいときは？<br><strong>A：</strong>スタンプ加工・トリミング対応可能！</p>
+      <p><strong>Q：</strong>費用は？<br><strong>A：</strong>お洋服購入＋参加は無料でOK！（今だけ♡）</p>
+    </div>
   </section>
 
   <footer>
     <p>さぁ、次の主役はあなた。あなたの物語、はじめてみませんか？</p>
-    <button class="cta-button">💖 今すぐ参加する</button>
-    <button class="cta-button">👗 お洋服を選びにいく</button>
     <p>&copy; 2025 KYU All Rights Reserved.</p>
   </footer>
 </body>
