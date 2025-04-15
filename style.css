@@ -1,0 +1,37 @@
+body {
+  background: linear-gradient(to bottom, #fff0f5, #ffeef7);
+  font-family: "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  color: #e91e63;
+  margin-top: 60px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin: 20px;
+  color: #777;
+}
+
+.cta-button {
+  background-color: #ff87b7;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 28px;
+  margin: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(255, 150, 200, 0.4);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffa3cc;
+}
